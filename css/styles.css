@@ -57,14 +57,19 @@ table tr td{
     border-bottom:1px white solid;
 }
 
-
+input{
+    display:none;
+}
+li{
+    list-style-type: none;
+}
 label:hover {
-  color: crimson;
+  color: darkred;
 }
 
 input:checked + label {
     width: 100%;
-    color:darkred;
+    color:crimson;
 }
 
 input:checked ~ .syningar{
@@ -72,11 +77,11 @@ input:checked ~ .syningar{
     transition: all .5s ease;
     width: 100%;
     z-index: 990;
+    list-style-type: none;
 }
 
 .syningar {
-    display:none
-    flex-flow: column;
+    display:none;
     list-style-type: none;
     width: 100%;
     transition: all .5s ease;
