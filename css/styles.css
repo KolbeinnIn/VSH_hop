@@ -12,14 +12,9 @@ body{
     font-size: 1.1em;
     color:white;
 }
-h1,
-h2{
-    
-}
 .fl-left{
     float:left;
 }
-
 .col-1-2{
     width:50%;
 }
@@ -88,4 +83,14 @@ input:checked ~ .syningar{
     margin:0;
     padding:0;
     z-index:990;
+}
+
+nav ul li{
+    position: relative;
+    left:-0.9em;
+    display:inline-block;
+    padding:30px;
+}
+nav ul li{
+    
 }
