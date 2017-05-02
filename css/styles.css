@@ -1,6 +1,11 @@
+body{
+    background-color:orange;
+}
+
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0 auto;
     max-width:60em;
@@ -53,13 +58,16 @@ table tr td{
 }
 
 input{
-    display:none;
+    dsplay:none;
+}
+input:hover{
+    color:crimson;
 }
 li{
     list-style-type: none;
 }
 label:hover {
-  color: darkred;
+  color: crimson;
 }
 
 input:checked + label {
@@ -91,6 +99,23 @@ nav ul li{
     display:inline-block;
     padding:30px;
 }
-nav ul li{
-    
+
+.midar{
+    display:none;
+}
+.flytjendur{
+    display: none;
+}
+.uppl{
+    display:none;
+}
+.straeto{
+    display:none;
+}
+input:checked ~ .flytjendur{
+    display:block;
+    transition: all .5s ease;
+    width: 100%;
+    z-index: 990;
+    list-style-type: none;
 }
