@@ -1,7 +1,3 @@
-body{
-    background-color:orange;
-}
-
 *{
     box-sizing: border-box;
 }
@@ -17,6 +13,7 @@ body{
     font-size: 1.1em;
     color:white;
 }
+
 .fl-left{
     float:left;
 }
