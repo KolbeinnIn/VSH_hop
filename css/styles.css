@@ -17,6 +17,9 @@ body{
 .fl-left{
     float:left;
 }
+.h{
+    height:100%;
+}
 .col-1-2{
     width:50%;
 }
@@ -28,6 +31,12 @@ body{
 }
 .col-1-4{
     width:25%;
+}
+.col-3-4{
+    width:75%;
+}
+.height-1-2{
+    height:50%;
 }
 a{
     color:white;
@@ -56,14 +65,13 @@ table tr td{
     padding-right: 30px;
     border-bottom:1px white solid;
 }
-
 input{
     dsplay:none;
 }
 input:hover{
     color:crimson;
 }
-li{
+.list li{
     list-style-type: none;
 }
 label:hover {
