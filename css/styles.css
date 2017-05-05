@@ -13,6 +13,8 @@
   zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 body{
+    position: relative;
+    top:4em;
     margin: 0 auto;
     max-width:60em;
     justify-content: center;
@@ -22,6 +24,12 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.1em;
     color:white;
+}
+.dalkar div{
+    height:300px;
+}
+h1{
+    font-size: 2em;
 }
 .midar ul{
     text-align: left
@@ -105,12 +113,23 @@ input:checked ~ .syningar{
     z-index:990;
 }
 .navigation{
-    position:relative;
-    left:-1em;
+    width:100%;
+    height:3em;
+    font-size: 1.5em;
+    position:fixed;
+    top:-1em;
+    left:0em;
+    border:1px transparent solid;
+    background-color:white;
+    color:black;
 }
 .navigation li{
-    padding:0 1em;
+    padding:1em;
     display:inline-block;
+}
+iframe,
+img{
+    display:block
 }
 
 .midar{
@@ -118,6 +137,10 @@ input:checked ~ .syningar{
 }
 .flytjendur{
     display: none;
+}
+p{
+    padding:0 1em;
+    text-align: left
 }
 .uppl{
     display:none;
@@ -127,6 +150,18 @@ input:checked ~ .syningar{
 }
 .straeto{
     display:none;
+}
+.home{
+    display: block;
+}
+.home:nth-child(2){
+    background-image: url(flytjendur.jpg);
+    height:406px;
+}
+.bImg{
+    height:406px;
+    background-image: url(flytjendur.jpg);
+    background-size: 100%;
 }
 #flytjendur:checked ~ .flytjendur{
     display:block;
@@ -143,6 +178,10 @@ input:checked ~ .syningar{
 #straeto:checked ~ .straeto{
     display:block;
     list-style-type: none;
+}
+#home:checked ~ .home{
+    display:block;
+    
 }
 #upplysingar:checked ~ .uppl{
     display:block;
