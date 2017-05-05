@@ -24,7 +24,7 @@ body{
     color:white;
 }
 .midar ul{
-    text-align: left;
+    text-align: left
 }
 .aukapadding{
     padding: 10px;
@@ -146,4 +146,8 @@ input:checked ~ .syningar{
 .flytjendur ul li{
     padding:30px;
     display:inline-block;
+}
+#straeto:checked ~ .straeto{
+    display:block;
+    list-style-type: none;
 }
