@@ -5,9 +5,11 @@
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     </head>
-    <body>
+    <body class="group">
+        
+        <h1 class="col1"><label for="home">HANGOUT MUSIC FEST</label></h1>
         <section class="col1 group">
-            <input type="radio" name="navigation" value="home" id="home">
+            <input type="radio" name="navigation" value="home" id="home" checked>
             <input type="radio" name="navigation" value="midar" id="midar">
             <input type="radio" name="navigation" value="flytjendur" id="flytjendur">
             <input type="radio" name="navigation" value="upplysingar" id="upplysingar">
@@ -18,20 +20,18 @@
                 <li><label for="upplysingar">Upplýsingar</label></li>
                 <li><label for="straeto">Strætó</label></li>
             </ul>
-            <h1><label for="home">HANGOUT MUSIC FEST</label></h1>
             <article class="col1 home group">
                 <div class="fl-left border">
                     <iframe width="720" height="406" src="https://www.youtube.com/embed/s9HF6rjVGzU" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="col-1-4 fl-left border bImg">
-                    <img src="css/flytjendur.jpg" height="100%" width="100%">
+                <div class="fl-left border bImg">
+                    <img src="css/flytjendur.jpg" height="406px" width="280">
                 </div>
             </article>
             <!----------------------------------------------------------------------------->
             <article class="straeto col1 group">
-                <div>
-                    <img class="fl-left" src="css/hfbus.jpeg" height="180px" width="280px">
-                    <h2>Vagnakerfi Hangout<h2>
+                <div class="col-3-4 fl-left border">
+                    <h2>Vagnakerfi Hangout</h2>
                     <p>Með aðgang að vögnunum okkar, þarft þú ekki að hafa áhyggjur af neinu, stekkur bara inn og ferð þína leið.
                     Hangout vagnakerfið er besti kosturinn til og frá hátiðinni á hverjum degi vegna þess að það er ekki mikið um bílastæði. 
                     Við mælum eindregið með því að kaupa miða í vagnana fyrirfram, jafnvel þótt þú vitir ekki hvar svefnaðstaða þín verði. Með "any line, 
@@ -40,7 +40,7 @@
             </article>
             <!----------------------------------------------------------------------------->
             <article class="col1 uppl group">
-                    <h1>ÞAÐ SEM ÞÚ ÞARFT AÐ VITA</h1>
+                    <h2>Upplýsingar</h2>
                 <div class="col-1-2 fl-left">
                     <h2>Miðar og sýninga upplýsingar</h2>
                     <p>Aldur 18+ eru velkomin, fyrir þá sem eru 17 ára eða yngri verða að vera í fylgd foreldris yfir 21 árs.</p>
@@ -52,9 +52,9 @@
                 </div>
             </article>
             <!----------------------------------------------------------------------------->
-            <article class="col1 midar group dalkar">
+            <article class="col1 midar group dalkar height">
                 <h1>MIÐAR</h1>
-                <div class="fl-left col-1-2 border aukapadding height">
+                <div class="fl-left col-1-2 border aukapadding">
                     <h2>ALMENNUR AÐGANGUR</h2>
                     <h3>309$</h3>
                     <ul>
