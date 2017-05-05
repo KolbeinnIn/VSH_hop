@@ -71,7 +71,9 @@ table tr td{
     padding-right: 30px;
     border-bottom:1px white solid;
 }
-
+.height{
+    height:239.4px;
+}
 input{
     display:none;
 }
@@ -97,19 +99,11 @@ input:checked ~ .syningar{
     z-index: 990;
     list-style-type: none;
 }
-
 .syningar{
     display:none;
     list-style-type: none;
     z-index:990;
 }
-
-/*.col1 ul li{
-    position: relative;
-    left:-0.9em;
-    display:inline-block;
-    paddin:30px;
-}*/
 .navigation{
     position:relative;
     left:-1em;
@@ -122,15 +116,14 @@ input:checked ~ .syningar{
 .midar{
     display:none;
 }
-.midar div ul{
-    left:;
-    
-}
 .flytjendur{
     display: none;
 }
 .uppl{
     display:none;
+}
+.uppl div{
+    text-align: left;
 }
 .straeto{
     display:none;
@@ -148,6 +141,10 @@ input:checked ~ .syningar{
     display:inline-block;
 }
 #straeto:checked ~ .straeto{
+    display:block;
+    list-style-type: none;
+}
+#upplysingar:checked ~ .uppl{
     display:block;
     list-style-type: none;
 }
