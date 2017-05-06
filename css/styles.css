@@ -48,13 +48,9 @@ body{
     order:5;
 }
 
-.row{
+.flex{
     display:flex;
     flex-flow: row;
-}
-.col{
-    display:flex;
-    flex-flow: column;
 }
 .midar ul{
     text-align: left
@@ -113,7 +109,11 @@ table tr td{
     padding-right: 30px;
     border-bottom:1px white solid;
 }
-iframe,
+iframe{
+    display:block;
+    height:800px;
+    width:451px;
+}
 img{
     display:block;
 }
