@@ -14,10 +14,8 @@
   zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 body{
-    display:flex;
-    flex-flow:column;
     position:relative;
-    top:5em;
+    top:7em;
     margin: 0 auto;
     max-width:60em;
     justify-content: center;
@@ -34,7 +32,6 @@ body{
 .order1{
     order:1;
 }
-
 .order2{
     order:2;
 }
@@ -48,12 +45,16 @@ body{
     order:5;
 }
 
-.flex{
+.row{
     display:flex;
-    flex-flow: row;
+    flex-flow: column;
 }
-.midar ul{
-    text-align: left
+.midar div{
+    padding:1em 0;
+}
+.midar *{
+    text-align: center;
+    margin: 0 auto;
 }
 .aukapadding{
     padding: 10px;
@@ -62,17 +63,18 @@ body{
     float:left;
 }
 .col-1-2{
-    width:50%;
+    width:100%;
 }
 .col1{
     width:100%;
 }
 .col-1-3{
-    width:33.333333%;
+    width:100%;
 }
 .col-1-4{
-    width:25%;
+    width:100%;
 }
+
 h1,
 h2,
 h3
@@ -111,15 +113,12 @@ table tr td{
 }
 iframe{
     display:block;
-    height:800px;
-    width:451px;
+    padding:10px;
 }
 img{
     display:block;
 }
-.height div{
-    height:313px;
-}
+
 input{
     display:none;
 }
@@ -158,27 +157,24 @@ nav{
     top:0%;
     text-shadow: 1px 1px black;
     color:aqua;
-    font-size:1.5em;
+    font-size:2em;
     border:1px transparent solid;
     background:#ffd1dc;
 }
 .navigation li{
-    padding:0 1em;
+    padding:0 0.5em;
     display:inline-block;
 }
 section{
+    width:100%;
     background-color:orange
 }
 .midar{
     display:none;
 }
-.midar p{    
-    text-align: left;
-}
-.midar div{
-    background-color:
-}
+
 .flytjendur{
+    font-size:2em;
     display: none;
 }
 .uppl{
@@ -218,9 +214,12 @@ section{
     list-style-type: none;
 }
 
-@media only screen (min-width: 60em){
+/*@media only screen (min-width: 60em){
     body{
         background-color:white;
         display:block;
+    }
+    .row{
+        flex-flow:row;
     }
 }
