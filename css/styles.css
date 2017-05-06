@@ -14,8 +14,10 @@
   zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 body{
+    display:flex;
+    flex-flow:column;
     position:relative;
-    top:3em;
+    top:5em;
     margin: 0 auto;
     max-width:60em;
     justify-content: center;
@@ -25,9 +27,34 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.1em;
-    color:white;
-    text-shadow: 1px 1px black;
+    font-size: 1.15em;
+    color:black;
+    /*text-shadow: 1px 1px black;*/
+}
+.order1{
+    order:1;
+}
+
+.order2{
+    order:2;
+}
+.order3{
+    order:3;
+}
+.order4{
+    order:4;
+}
+.order5{
+    order:5;
+}
+
+.row{
+    display:flex;
+    flex-flow: row;
+}
+.col{
+    display:flex;
+    flex-flow: column;
 }
 .midar ul{
     text-align: left
@@ -50,17 +77,26 @@ body{
 .col-1-4{
     width:25%;
 }
+h1,
+h2,
+h3
+{
+    color:black
+}
+p{
+    padding:10px;
+}
 a{
-    color:white;
+    color:black;
     text-decoration: none;
 }
 a:hover{
-    color:crimson;
+    color:aqua;
 }
-.border{
-    border:1px white solid;
+/*.border{
+    border:1px black solid;
 }
-
+*/
 table{
     border-collapse:collapse;
     margin:0 auto;
@@ -82,7 +118,7 @@ img{
     display:block;
 }
 .height div{
-    height:300px;
+    height:313px;
 }
 input{
     display:none;
@@ -94,7 +130,8 @@ input:hover{
     list-style-type: none;
 }
 label:hover {
-  color: crimson;
+    color: crimson;
+    cursor:pointer;
 }
 
 input:checked + label {
@@ -114,30 +151,32 @@ input:checked ~ .syningar{
     list-style-type: none;
     z-index:990;
 }
-.navigation{
-    display:flex;
-    flex-flow:row;
+nav{
+    width:100%;
     position:fixed;
-    left:36%;
-    top:-2.75%;
+    left:0%;
+    top:0%;
     text-shadow: 1px 1px black;
     color:aqua;
     font-size:1.5em;
-    padding:10px;
-    border:1px white solid;
-    background-color:white;
-    
+    border:1px transparent solid;
+    background:#ffd1dc;
 }
 .navigation li{
     padding:0 1em;
     display:inline-block;
 }
-
+section{
+    background-color:orange
+}
 .midar{
     display:none;
 }
 .midar p{    
     text-align: left;
+}
+.midar div{
+    background-color:
 }
 .flytjendur{
     display: none;
@@ -177,4 +216,11 @@ input:checked ~ .syningar{
 #home:checked ~ .home{
     display:block;
     list-style-type: none;
+}
+
+@media only screen (min-width: 60em){
+    body{
+        background-color:white;
+        display:block;
+    }
 }
